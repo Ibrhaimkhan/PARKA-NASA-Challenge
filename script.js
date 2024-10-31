@@ -9,11 +9,11 @@ downbtn.addEventListener('click', (e) => {
         console.log('this');
         buttons.style.display = 'flex';
         downbtn.style.rotate = '180deg';
-        downbtn.style.top = '177px';
+        downbtn.style.top = '187px';
     } else {
         buttons.style.display = 'none';
         downbtn.style.rotate = '0deg';
-        downbtn.style.top = '180px';
+        downbtn.style.top = '190px';
     }
 });
 
