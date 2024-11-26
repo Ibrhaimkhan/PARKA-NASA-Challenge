@@ -4,9 +4,7 @@ var pictures = document.querySelector('.pictures')
 const pictureList = ['picture1', 'picture2', 'picture3', 'picture4'];
 
 downbtn.addEventListener('click', (e) => {
-    console.log("CLICKED YAY");
     if (!buttons.style.display || buttons.style.display == 'none') {
-        console.log('this');
         buttons.style.display = 'flex';
         downbtn.style.rotate = '180deg';
         downbtn.style.top = '187px';

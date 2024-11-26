@@ -41,7 +41,7 @@
 
 body {
     margin: 0px;
-    background-image: url('StarryBG.png');
+    background-image: url('../pictures/StarryBG.png');
     width: 100%;
 }
 
@@ -114,6 +114,7 @@ h1 {
     opacity: 100%;
     transition: rotate 0.3s;
     z-index: 101;
+    
 }
 
 #downarrow:hover {
@@ -134,13 +135,14 @@ h1 {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(270deg, #0B3D9180, #FC3D2180);
-    padding-bottom: 23px;
+    padding-bottom: 7px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     width: 96.5%;
     z-index: 5;
     margin-top: 87px;
+    padding-top: 7px;
 }
 
 .redbts {
@@ -202,7 +204,7 @@ h1 {
     margin-bottom: 0px;
     width: 100%;
     text-align: top;
-    padding-bottom: 200px;
+    padding-bottom: 190px;
     border-top-color: black;
     border-top-width: 5px;
     border-top-style: solid;
@@ -236,9 +238,17 @@ h1 {
     align-items: center;
 }
 
+.anavbar li {
+    width: 25%;
+}
+
+.anavbar li:hover {
+    background-color: #dddddd;
+}
+
 .anavbar img {
-    width: 50%;
     margin-top: 14px;
+    height: 100px;
 }
 
 .anavbar p {
@@ -254,7 +264,16 @@ h1 {
 .homewriting {
     background-color: #ffffffc4;
     padding: 10px 10px;
-    margin-top: 700px;
+    margin-top: 690px;
+    top: 85%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.abtwriting {
+    background-color: #ffffffc4;
+    padding: 10px 10px;
+    margin-top: 20px;
     top: 85%;
     display: flex;
     margin-bottom: 20px;
@@ -298,6 +317,10 @@ h1 {
 #picture4 {
     opacity: 0%;
     position: absolute;
+}
+
+.allpictures {
+    margin-top: 30px;
 }
 
 .aboutperson {
@@ -414,7 +437,7 @@ h1 {
     border-style: solid;
     border-color: black;
     border-width: 5px;
-    height: 200px;
+    height: 100px;
     box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(154, 147, 113, 0.95);
     border-radius: 5px;
     display: flex;
@@ -438,54 +461,47 @@ main {
 
 .teamvideo {
     margin: 10px auto 0px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
+    border: 5px solid black;
 }
 
-.navbar ul:before {
-    content: '';
-    border-image: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.navbar ul:active {
-    border-image: #000
-}
-
-.navbar ul:active:after {
-    background: transparent;
-}
-
-.navbar ul:hover:before {
-    opacity: 1;
-}
-
-.navbar ul:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
+.modelselect {
     width: 100%;
-    height: 100%;
-    border-image: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+    border: 5px solid black;
+    background-color: white;
+    margin: 10px 0px;
 }
 
-@keyframes glowing {
-    0% { border-width: 0 0; }
-    50% { border-width: 400% 0; }
-    100% { border-width: 0 0; }
+.modelgroup {
+    margin: 0px;
+}
+
+.modelgroup img {
+    width: 96%;
+    border: 5px solid black;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.stepgroup {
+    margin: 15px auto;
+    padding: 0px;
+    width: 15%;
+}
+
+.stepgroup div {
+    border: 3px solid black;
+    border-radius: 100%;
+    width: 70%;
+    background-image: linear-gradient(90deg, #ffd966, #f1c232);
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 50px;
+    margin: 15px auto;
+}
+
+tr {
+    margin: 0px;
+    padding: 0px;
 }
